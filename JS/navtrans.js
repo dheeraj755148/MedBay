@@ -4,7 +4,8 @@ var dictionary = {
         "username_cart" : "Cart",
         "username_clearcart" : "Clear Cart",
         "closecart" : "Close",
-        "cartorder" : "Order now"
+        "cartorder" : "Order now",
+        "addtocart" : "ADD TO CART"
         
     },
     "hi": {
@@ -13,7 +14,8 @@ var dictionary = {
         "username_cart" : "कार्ट",
         "username_clearcart" : "कार्ट को खाली करें",
         "closecart" : "बंद करे",
-        "cartorder" : "ऑर्डर करें"
+        "cartorder" : "ऑर्डर करें",
+        "addtocart" : "कार्ट में डालें"
 
     },
 
@@ -22,7 +24,8 @@ var dictionary = {
         "username_cart" : "कार्ट",
         "username_clearcart" : "कार्ट रिकामे करा",
         "closecart" : "बंद करा",
-        "cartorder" : "आता ऑर्डर करा"
+        "cartorder" : "आता ऑर्डर करा",
+        "addtocart" : "कार्टमध्ये जोडा"
     }
 };
 
