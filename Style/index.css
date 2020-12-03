@@ -314,7 +314,7 @@ nav .dropdown-item input {
 .col-md-8 .card .card-text {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 9.6px;
 }
 
@@ -796,4 +796,12 @@ footer .footer-copyright {
   margin: auto;
 }
 
-/*# sourceMappingURL=index.css.map */
+@media print {
+  .body {
+    -webkit-print-color-adjust: exact;
+    background: #222;
+    color: #eee;
+  }
+}
+
+@page{size:auto; margin:5mm; }/*# sourceMappingURL=index.css.map */

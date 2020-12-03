@@ -20,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="./index.html" title="MedBay"><img src="./Images/medicine.svg" alt="home"><br>
-            <p>MedBay</p>
+          <p style="text-align:center;">[[en]]MedBay[[hi]]मेडबे[[mr]]मेडबे</p>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><img src="./Images/helm.svg" alt=""></span>
@@ -31,8 +31,8 @@
                 <li class="nav-item">
                     <div class="justify-content-md-center">
                         <form class="form-inline my-2 my-lg-0 ml-auto">
-                            <label class="location"><img id="anchor" src="./Images/anchor.svg" alt="Location"><p>Delivery at Mariana Trench</p></label >
-                        <input class="form-control mr-sm-2" id = "filter" type="text" placeholder="Search the treasures" aria-label="Search" >
+                            <label class="location"><img id="anchor" src="./Images/anchor.svg" alt="Location"><p>[[en]]Delivery at Mariana Trench[[hi]]मारियाना ट्रेंच में डिलीवरी[[mr]]मारियाना ट्रेंच येथे वितरण</p></label >
+                        <input class="form-control mr-sm-2" id = "filter" type="text" data-translate="username_placeHolder" placeholder="Search the treasures" aria-label="Search" >
                         <button class="btn btn-info my-2 my-sm-0" id="searchbutton" type="submit" title="Search"><img src="./Images/search.svg" alt="search"></button>
                     </form>
                 </div>
@@ -46,14 +46,17 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" ><button id="theme-toggle">Switch to dark mode</button></a>
-                <a class="dropdown-item" href="#">Language Change</a>
+                <a class="dropdown-item" href="#">Select Language</a>
+                <a class="dropdown-item" href="#"><div class="btn btn-default" onclick="setLang('en');change_lang('en');checker('en');">English</div></a>
+                <a class="dropdown-item" href="#"><div class="btn btn-default" onclick="setLang('hi');change_lang('hi');checker('hi');">Hindi</div></a>
+                <a class="dropdown-item" href="#"><div class="btn btn-default" onclick="setLang('mr');change_lang('mr');checker('mr');">Marathi</div></a>
               </div>
             </li>
           </ul>   
 
           <div class="row">
             <div class="col">
-              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#cart" title="Cart"><img src="./Images/Cart.svg" alt="Cart"> (<span class="total-count"></span>)</button><button class="clear-cart btn btn-outline-danger"><img src="./images/oil-spill.svg" alt="clear-cart" title="Clear-Cart"></button></div>
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#cart" title="Cart"><img src="./Images/Cart.svg" data-translate="username_cart" alt="Cart" title="Cart"> (<span class="total-count"></span>)</button><button class="clear-cart btn btn-outline-danger"><img src="./images/oil-spill.svg" alt="clear-cart" data-translate="username_clearcart" title="Clear-Cart"></button></div>
         </div>
 
         </div>
@@ -61,26 +64,28 @@
     <div class="imageFormater">
       <div class="slideShow">
         <img src="./Images/skinport.webp" alt="welcoming">
-        <div class="message"><p> Welcome to MedBay.</p></div>
-        <div class="message2"><p> Medicines delivered with care.  .</p></div>
+        <div class="message"><p>[[en]] Welcome to MedBay.[[hi]] मेडबे में आपका स्वागत है. [[mr]] मेडबे मध्ये आपले स्वागत आहे.</p></div>
+        <div class="message2"><p>[[en]] Medicines delivered with care.  [[hi]] हम देखभाल के साथ दवा वितरित करते हैं. [[mr]] आम्ही काळजीपूर्वक औषध वितरित करतो. </p></div>
       </div>
     </div>
 
 
     <div class="container ">
-      <p id="main-heading">Covid News</p>
+      <p id="main-heading">[[en]]Latest News[[hi]]ताज़ा खबर[[mr]]ताजी बातमी</p>
       <div class="row">
         <div class="col-lg-3 col-md-4 newsarticles" >
           <div class="col">
-            <div class="headingitems"><img id="newSection" src="./Images/piranaha.svg" alt="pira"><p id="heading">Times of India</p></div>
-            <p>Covid cases rising a lot...stay indoors..Covid is deadly..Have a great day.</p>
+            <div class="headingitems"><img id="newSection" src="./Images/piranaha.svg" alt="pira"><p id="heading">[[en]]INDIA[[hi]]इंडिया
+              [[mr]]इंडिया
+            </p></div>
+            <p>[[en]]Nuclear ash is settling, citizens are migrating to underwater domes.[[hi]]परमाणु राख बस रहा है, नागरिक पानी के नीचे के गुंबदों की ओर पलायन कर रहे हैं.[[mr]]आण्विक राख निकामी होत आहे, नागरिक पाण्याखालील घुमटांवर स्थलांतर करीत आहेत.</p>
           </div>
           <div class="col">
-            <div class="headingitems"><img id="newSection1" src="./Images/piranaha.svg" alt="pira"><p id="heading">India News</p></div>
+            <div class="headingitems"><img id="newSection1" src="./Images/piranaha.svg" alt="pira"><p id="heading">[[en]]India News[[hi]]इंडिया न्यूज़[[mr]]इंडिया न्यूज़ </p></div>
             <p>Covid cases are rising, be indoors and stay safe.</p>
           </div>          
           <div class="col">
-            <div class="headingitems"><img id="newSection2" src="./Images/piranaha.svg" alt="pira"><p id="heading">Republic TV</p></div>
+            <div class="headingitems"><img id="newSection2" src="./Images/piranaha.svg" alt="pira"><p id="heading">[[en]]Republic TV[[hi]]रिपब्लिक टीवी[[mr]]रिपब्लिक टीवी </p></div>
             <p>Covid cases rising, wear mask and shield for best precaution.</p>
           </div>
         </div>
@@ -98,10 +103,10 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/5litres.png" />
-                            <p class="card-title">FLOH Instant Hand Sanitizer</p>
-                            <p class="card-text">Manufacturer: Sbl Pvt Ltd</p>
-                            <p class="amount">Rs. 500/-</p>
-                            <a href="#" data-name="FLOH Instant Hand Sanitizer" data-price="500" class="cart-hidden btn btn-primary">
+                            <p class="card-title">[[en]]Let's Shake Handz 5L Hand Sanitizer[[hi]]लेट्स शेक हैंड्स  5L हैंड सैनिटाइज़र[[mr]]लेट्स शेक हँडझ  5L हैंड सैनिटाइज़र</p>
+                            <p class="card-text">[[en]]Manufacturer: S.M Innophorm Pvt. Ltd.[[hi]]उत्पादक: एस. एम. इनोफॉर्म प्रा. लि.[[mr]]उत्पादक: एस. एम. इनोफॉर्म प्रा. लि.s</p>
+                            <p class="amount">[[en]] Rs.2500/-[[hi]] रु.२५००/-[[mr]] रु.२५००/-</p>
+                            <a href="#" data-name="Let's Shake Handz 5L Hand Sanitizer" data-price="2500" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
                         </div>
@@ -110,9 +115,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v35_12.png" />
-                            <p class="card-title">Tri-Activ Instant Hand Sanitizer 500 ml</p>
-                            <p class="card-text">Manufacturer: Piramal Healthcare Ltd</p>
-                            <p class="amount">Rs. 250/-</p>
+                            <p class="card-title">[[en]]Tri-Activ Instant Hand Sanitizer 500 ml[[hi]]ट्राई-एक्टिव इंस्टेंट हैंड सैनिटाइजर 500 मिली[[mr]]ट्राय एक्टिव इन्स्टंट हँड सॅनिटायझर 500 मि.ली.</p>
+                            <p class="card-text">[[en]]Manufacturer: Piramal Healthcare Ltd[[hi]]उत्पादक: पिरामल हेल्थकेयर लिमिटेड[[mr]]उत्पादक: पिरामल हेल्थकेयर लिमिटेड</p>
+                            <p class="amount">[[en]] Rs.250/-[[hi]] रु.२५०/-[[mr]] रु.२५०/-</p>
                             <a href="#" data-name="Tri-Activ Instant Hand Sanitizer 500 ml" data-price="250" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -122,9 +127,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v35_22.png" />
-                            <p class="card-title">1Mile Coverall with Shoe Cover (95 GSM)</p>
-                            <p class="card-text">Manufacturer: 1 Mile Healthcare</p>
-                            <p class="amount">Rs. 199/-</p>
+                            <p class="card-title">[[en]]1Mile Coverall with Shoe Cover (95 GSM)[[hi]]1माइल कव्हरेल (95 जीएसएम) जूता कवर के साथ[[mr]]शू कव्हर (१G जीएसएम) सह 1 माईल कव्हरेल</p>
+                            <p class="card-text">[[en]]Manufacturer: 1 Mile Healthcare[[hi]]उत्पादक: 1माइल हेल्थकेयर[[mr]]उत्पादक: 1माइल हेल्थकेयर</p>
+                            <p class="amount">[[en]] Rs.199/-[[hi]] रु.१९९/-[[mr]] रु.१९९/-</p>
                             <a href="#" data-name="1Mile Coverall with Shoe Cover (95 GSM)" data-price="199" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -134,9 +139,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v35_27.png" />
-                            <p class="card-title">Canyearn Medical Infrared Thermometer</p>
-                            <p class="card-text">Manufacturer: Canyeorn</p>
-                            <p class="amount">Rs. 4205/-</p>
+                            <p class="card-title">[[en]]Canyearn Medical Infrared Thermometer[[hi]]कॅनियर्न मेडिकल इंफ्रारेड थर्मामीटर[[mr]]कॅनियर्न मेडिकल इन्फ्रारेड थर्मामीटर</p>
+                            <p class="card-text">[[en]]Manufacturer: Canyearn[[hi]]उत्पादक: कॅनियर्न[[mr]]उत्पादक: कॅनियर्न</p>
+                            <p class="amount">[[en]] Rs.4205/-[[hi]] रु.४२०५/-[[mr]] रु.४२०५/-</p>
                             <a href="#" data-name="Canyearn Medical Infrared Thermometer" data-price="4205" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -146,10 +151,10 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v43_71.png" />
-                            <p class="card-title">KK Traders Face Shield (Protection)</p>
-                            <p class="card-text">Manufacturer: Sbl Pvt Ltd</p>
-                            <p class="amount">Rs. 200/-</p>
-                            <a href="#" data-name="KK Traders Face Shield (Protection)" data-price="200" class="cart-hidden btn btn-primary">
+                            <p class="card-title">[[en]]1Mile Protective Face Shield[[hi]]1माइल सुरक्षात्मक फेस शील्ड[[mr]]1माइल प्रोटेक्टिव फेस शील्ड</p>
+                            <p class="card-text">[[en]]Manufacturer: 1 Mile Healthcare[[hi]]उत्पादक: 1माइल हेल्थकेयर[[mr]]उत्पादक: 1माइल हेल्थकेयर s</p>
+                            <p class="amount">[[en]] Rs.549/-[[hi]] रु.५४९/-[[mr]] रु.५४९/-</p>
+                            <a href="#" data-name="1Mile Protective Face Shield" data-price="549" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
                         </div>
@@ -158,10 +163,10 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v43_90.png" />
-                            <p class="card-title">Anti-Bacterial mask -95 (Certified)</p>
-                            <p class="card-text">Manufacturer: Sbl Pvt Ltd</p>
-                            <p class="amount">Rs. 200/-</p>
-                            <a href="#" data-name="Anti-Bacterial mask -95 (Certified)" data-price="200" class="cart-hidden btn btn-primary">
+                            <p class="card-title">[[en]]Anti-Bacterial Face Mask KN95[[hi]]एंटी-बैक्टीरियल फेस मास्क KN95[[mr]]अँटी-बॅक्टेरियल फेस मास्क KN95</p>
+                            <p class="card-text">[[en]]Manufacturer: Huizhou Green Communication Equipment[[hi]]उत्पादक: हुईझो ग्रीन कम्युनिकेशन उपकरण[[mr]]उत्पादक: हुईझो ग्रीन कम्युनिकेशन उपकरण</p>
+                            <p class="amount">[[en]] Rs.734/-[[hi]] रु.७३४/-[[mr]] रु.७३४/-</p>
+                            <a href="#" data-name="Anti-Bacterial Face Mask KN95" data-price="734" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
                         </div>
@@ -208,10 +213,10 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v43_83.png" />
-                            <p class="card-title">Vitamin C violet trader</p>
-                            <p class="card-text">Manufacturer: Sbl Pvt Ltd</p>
-                            <p class="amount">Rs. 734/-</p>
-                            <a href="#" data-name="Vitamin C violet trader" data-price="734" class="cart-hidden btn btn-primary">
+                            <p class="card-title">[[en]]Nature's Velvet Vitamin C[[hi]]नेचरस वेलवेट व्हिटॅमिन सी[[mr]]नेचरस वेलवेट व्हिटॅमिन सी</p>
+                            <p class="card-text">[[en]]Manufacturer: Nature's Velvet Lifecare[[hi]]उत्पादक: नेचरस वेलवेट लाइफकेअर[[mr]]उत्पादक: नेचरस वेलवेट लाइफकेअर</p>
+                            <p class="amount">[[en]] Rs.400/-[[hi]] रु.४००/-[[mr]] रु.४००/-</p>
+                            <a href="#" data-name="Natures Velvet Vitamin C" data-price="400" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
                         </div>
@@ -220,10 +225,10 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v48_59.png" />
-                            <p class="card-title">Lama Immunity Kit</p>
-                            <p class="card-text">Manufacturer: Lama Pharmaceuticals</p>
-                            <p class="amount">Rs. 645/-</p>
-                            <a href="#" data-name="Lama Immunity Kit" data-price="645" class="cart-hidden btn btn-primary">
+                            <p class="card-title">[[en]]Lama Immunity Kit[[hi]]लामा इम्यूनिटी किट[[mr]]लामा इम्यूनिटी किट</p>
+                            <p class="card-text">[[en]]Manufacturer: Lama Pharmaceuticals[[hi]]उत्पादक: लामा फार्मास्यूटिकल्स[[mr]]उत्पादक:लामा फार्मास्युटिकल्स</p>
+                            <p class="amount">[[en]] Rs.140/-[[hi]] रु.१४०/-[[mr]] रु.१४०/-</p>
+                            <a href="#" data-name="Lama Immunity Kit" data-price="140" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
                         </div>
@@ -232,9 +237,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v48_35.png" />
-                            <p class="card-title">AADAR Immunity Pro</p>
-                            <p class="card-text">Manufacturer: Aadar</p>
-                            <p class="amount">Rs. 274/-</p>
+                            <p class="card-title">[[en]]AADAR Immunity Pro[[hi]]आदर इम्युनिटी प्रो[[mr]]आदर इम्युनिटी प्रो </p>
+                            <p class="card-text">[[en]]Manufacturer: Aadar[[hi]]उत्पादक: आदर [[mr]]उत्पादक: आदर</p>
+                            <p class="amount">[[en]] Rs.274/-[[hi]] रु.२७४/-[[mr]] रु.२७४/-</p>
                             <a href="#" data-name="AADAR Immunity Pro" data-price="274" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -244,9 +249,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v48_40.png" />
-                            <p class="card-title">INLIFE Immunity Plus</p>
-                            <p class="card-text">Manufacturer: Inlife Pharma Pvt Ltd</p>
-                            <p class="amount">Rs. 345/-</p>
+                            <p class="card-title">[[en]]INLIFE Immunity Plus[[hi]]इनलाइफ इम्यूनिटी प्लस[[mr]]इनलाइफ इम्यूनिटी प्लस</p>
+                            <p class="card-text">[[en]]Manufacturer: Inlife Pharma Pvt Ltd[[hi]]उत्पादक: इनलाइफ फार्मा प्राइवेट लिमिटेड[[mr]]उत्पादक: इनलाइफ फार्मा प्रायव्हेट लिमिटेड</p>
+                            <p class="amount">[[en]] Rs.834/-[[hi]] रु.८३४/-[[mr]] रु.८३४/-</p>
                             <a href="#" data-name="INLIFE Immunity Plus" data-price="345" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -256,9 +261,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v48_45.png" />
-                            <p class="card-title">KEE Pharma Immunity</p>
-                            <p class="card-text">Manufacturer: Kee Pharma Ltd</p>
-                            <p class="amount">Rs. 834/-</p>
+                            <p class="card-title">[[en]]KEE Pharma Immunity[[hi]]कीफार्मा इम्यूनिटी[[mr]]कीफार्मा इम्यूनिटी</p>
+                            <p class="card-text">[[en]]Manufacturer: KEE Pharma Ltd[[hi]]उत्पादक: कीफार्मा लिमिटेड[[mr]]उत्पादक: कीफार्मा लिमिटेड</p>
+                            <p class="amount">[[en]] Rs.834/-[[hi]] रु.८३४/-[[mr]] रु.८३४/-</p>
                             <a href="#" data-name="KEE Pharma Immunity" data-price="834" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -268,9 +273,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/v48_54.png" />
-                            <p class="card-title">Zenith Immunity Plus</p>
-                            <p class="card-text">Manufacturer: Zenith Nutricorp</p>
-                            <p class="amount">Rs. 569/-</p>
+                            <p class="card-title">[[en]]Zenith Immunity Plus[[hi]]जेनिथ इम्यूनिटी प्लस[[mr]]झेनिथ इम्यूनिटी प्लस</p>
+                            <p class="card-text">[[en]]Manufacturer: Zenith Nutricorp[[hi]]उत्पादक: जेनिथ न्यूट्रिकॉर्प[[mr]]उत्पादक: झेनिथ न्यूट्रिकॉर्प</p>
+                            <p class="amount">[[en]] Rs.569/-[[hi]] रु.५६९/-[[mr]] रु.५६९/-</p>
                             <a href="#" data-name="Zenith Immunity Plus" data-price="569" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -318,9 +323,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/image 15.png" />
-                            <p class="card-title">Skin Care oil</p>
-                            <p class="card-text">Manufacturer: Amruta Pvt Ltd</p>
-                            <p class="amount">Rs. 250/-</p>
+                            <p class="card-title">[[en]]Skin Care Oil[[hi]]स्किन केयर ऑइल [[mr]]स्किन केयर ऑइल </p>
+                            <p class="card-text">[[en]]Manufacturer: Amruta Pvt Ltd[hi]]उत्पादक: अमृता प्राइवेट लिमिटेड[[mr]]उत्पादक: अमृता प्राइवेट लिमिटेड</p>
+                            <p class="amount">[[en]]Rs. 250/-[[hi]] रु.२५०/-[[mr]] रु.२५०/-</p>
                             <a href="#" data-name="Skin Care oil" data-price="250" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -330,9 +335,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/image 16.png" />
-                            <p class="card-title">Everyuth Face Wash</p>
-                            <p class="card-text">Manufacturer: Everyuth Healthcare Ltd</p>
-                            <p class="amount">Rs. 80/-</p>
+                            <p class="card-title">[[en]]Everyuth Face Wash[[hi]]एवरयूथ फेस वॉश [[mr]]एवरयूथ फेस वॉश </p>
+                            <p class="card-text">[[en]]Manufacturer: Everyuth Healthcare Ltd[hi]]उत्पादक: एवरयूथ हेल्थकेयर लिमिटेड[[mr]]उत्पादक: एवरयूथ हेल्थकेयर लिमिटेड</p>
+                            <p class="amount">[[en]]Rs. 80/-[[hi]] रु.८०/-[[mr]] रु.८०/-</p>
                             <a href="#" data-name="Everyuth Face Wash" data-price="80" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -342,9 +347,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/image 14.png" />
-                            <p class="card-title">Dettol Original</p>
-                            <p class="card-text">Manufacturer: Dettol</p>
-                            <p class="amount">Rs. 20/-</p>
+                            <p class="card-title">[[en]]Dettol Original[[hi]]डेटोल ओरिजिनल [[mr]]डेटोल ओरिजिनल </p>
+                            <p class="card-text">[[en]]Manufacturer: Dettol[hi]]उत्पादक: डेटोल[[mr]]उत्पादक: डेटोल</p>
+                            <p class="amount">[[en]]Rs. 20/-[[hi]]रु.२०/-[[mr]]रु.२०/-</p>
                             <a href="#" data-name="Dettol Original" data-price="20" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -354,9 +359,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/image 13.png" />
-                            <p class="card-title">Candid Dustin Powder</p>
-                            <p class="card-text">Manufacturer: Candid powders</p>
-                            <p class="amount">Rs. 150/-</p>
+                            <p class="card-title">[[en]]Candid Dustin Powder[[hi]]कैंडिड डस्टिन पाउडर[[mr]]कैंडिड डस्टिन पाउडर</p>
+                            <p class="card-text">[[en]]Manufacturer: Glenmark Pharmaceuticals Ltd[[hi]]उत्पादक: ग्लेनमार्क फार्मास्यूटिकल्स लिमिटेड[[mr]]उत्पादक: ग्लेनमार्क फार्मास्यूटिकल्स लिमिटेड</p>
+                            <p class="amount">[[en]]Rs. 150/-[[hi]]रु.१५०/-[[mr]]रु.१५०/-</p>
                             <a href="#" data-name="Candid Dustin Powder" data-price="150" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -366,9 +371,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/image 19.png" />
-                            <p class="card-title">Himalaya Moisturizer</p>
-                            <p class="card-text">Manufacturer: Himalaya</p>
-                            <p class="amount">Rs. 100/-</p>
+                            <p class="card-title">[[en]]Himalaya Moisturizer[[hi]]हिमालया मॉइस्चराइज़र[[mr]]हिमालया मॉइस्चराइज़र</p>
+                            <p class="card-text">[[en]]Manufacturer: Himalaya[[hi]]उत्पादक: हिमालया[[mr]]उत्पादक: हिमालया</p>
+                            <p class="amount">[[en]]Rs. 100/-[[hi]]रु.१००/-[[mr]]रु.१००/-</p>
                             <a href="#" data-name="Himalaya Moisturizer" data-price="100" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -378,9 +383,9 @@
                         <div class="col-md-4">
                           <div class="card card-body">
                             <img class="img-fluid" src="./Images/image 20.png" />
-                            <p class="card-title">Himalaya AntiDandruf</p>
-                            <p class="card-text">Manufacturer: Himalaya</p>
-                            <p class="amount">Rs. 150/-</p>
+                            <p class="card-title">[[en]]Himalaya Anti-Dandruff[[hi]]हिमालया रूसी रोधक[[mr]]हिमालया अँटी डँड्रफ</p>
+                            <p class="card-text">[[en]]Manufacturer: Himalaya[[hi]]उत्पादक: हिमालया[[mr]]उत्पादक: हिमालया</p>
+                            <p class="amount">[[en]]Rs. 150/-[[hi]]रु.१५०/-[[mr]]रु.१५०/-</p>
                             <a href="#" data-name="Himalaya AntiDandruf" data-price="150" class="cart-hidden btn btn-primary">
                                 <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
                           </div>
@@ -438,7 +443,7 @@
                                         <div class="col-lg-6">
                                             <div class="invoice-logo"><img width="100" src="./Images/medicine.svg"
                                                     alt="Invoice logo">
-                                                <p style="display:block">MEDBAY</p>
+                                                    <p style="display:block; text-align:center; width : 100px">MEDBAY</p>
                                             </div>
 
                                         </div>
@@ -491,8 +496,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" onclick="myFunction()" class="btn btn-primary">Order now</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-translate="closecart">Close</button>
+              <button type="button" onclick="myFunction()" class="btn btn-primary" data-translate="cartorder">Order now</button>
             </div>
         </div>
     </div>
@@ -509,6 +514,8 @@
       <script src="./JS/invoice.js"></script>
       <script src="./JS/randomstuff.js"></script>
       <script src="./JS/dark.js"></script>
+      <script src="./JS/multilingualizer.js"></script>
+      <script src="./JS/navtrans.js"></script>
   
 </body>
 
@@ -518,19 +525,19 @@
     <div class="row">
       <div class="col-md-6 mt-md-0 mt-3">
         <img src="./Images/medicine.svg" alt="logo">
-        <p id="logotext" >MedBay</p>
+        <p id="logotext" >[[en]]MedBay[[hi]]मेडबे[[mr]]मेडबे</p>
       </div>
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
       <div class="col-md-3 mb-md-0 mb-3">
-        <p class="row-headings" >Contact Us</p>
+        <p class="row-headings" >[[en]]Contact Us[[hi]]संपर्क करें[[mr]]संपर्क साधा</p>
         <p class="content">MedBay, Shop 10, Near Pacific Rim, Earth</p>
         <p class="content"><img src="./Images/1667685 1.svg" alt="pummp">0000-111-000</p>
       </div>
 
       <div class="col-md-3 mb-md-0 mb-3">
-        <p class="row-headings" >Mail Us</p>
+        <p class="row-headings" >[[en]]Mail Us[[hi]]मेल करें[[mr]]मेल करा</p>
         <input type="text" placeholder="Enter Mail Address">
         <button id="submit"><img src="./Images/Vector 5.svg" alt=""></button>
       </div>

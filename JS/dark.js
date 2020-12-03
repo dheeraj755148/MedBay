@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     themeToggle.addEventListener('click', () => {
         if(themeStylesheet.href.includes('index')){
-            console.log('darkmode');
             themeStylesheet.href = './Style/darkIndex.css';
             themeToggle.innerText = 'Switch to light mode';
             document.getElementById('newSection').src="./Images/pira light.svg";
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('immune').src="./Images/immunelight.svg";
             document.getElementById('pirate').src="./Images/piratelight.svg"
         } else {
-            console.log('loghtmode');
 
             themeStylesheet.href = './Style/index.css';
             themeToggle.innerText = 'Switch to dark mode';
