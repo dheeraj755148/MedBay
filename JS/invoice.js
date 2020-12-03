@@ -15,7 +15,7 @@ var langer=0
 
 function myFunction() {
     var txt;
-    console.log(langer)
+    
     switch (langer) {
         case 1:
             var pat_person = prompt("कृपया रोगी का पूरा नाम दर्ज करें:", "Jane Doe ");
