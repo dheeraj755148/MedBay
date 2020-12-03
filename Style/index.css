@@ -86,6 +86,18 @@ nav .btn {
   background-color: transparent;
 }
 
+nav .dropdown{
+  margin-right: 5px;
+  margin-left: 5px;
+
+}
+
+nav .clear-cart{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
 nav #searchbutton {
   background-color: white;
 }
@@ -241,7 +253,7 @@ nav .dropdown-item input {
   line-height: 21.29px;
   letter-spacing: 7%;
   text-decoration: underline;
-
+  position: absolute;
 }
 
 .col-lg-9 .headingitems .view-all p a,
@@ -315,7 +327,7 @@ nav .dropdown-item input {
 .col-md-8 .card .card-text {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 9.6px;
 }
 
@@ -767,7 +779,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1114px) {
+@media screen and (max-width: 1275px) {
   nav .location {
     display: none;
   }
@@ -776,6 +788,14 @@ input:checked + .slider:before {
     height: 40px;
   }
 }
+@media (max-width: 700px){
+  .col-lg-9 .headingitems .view-all,
+.col-md-8 .headingitems .view-all{
+    position: relative;
+}
+
+}
+
 
 @media (max-width: 1024px) {
   .col-lg-3 .card {
@@ -864,6 +884,7 @@ a.viewButton{
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
+  max-width: fit-content;
 }
 a.viewButton:hover{
   border-color: rgba(255,255,255,1);
@@ -884,7 +905,28 @@ a.viewButton:hover{
   margin: auto;
 }
 
+@media print {
+  .body {
+    -webkit-print-color-adjust: exact;
+    background: #222;
+    color: #eee;
+  }
+}
+@media (max-width: 768px){
+.imageFormater .message p {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}}
+
+@media (max-width: 768px){
+  .imageFormater .message2 p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    max-width: 320px;
+}}
 
 
 
-/*# sourceMappingURL=index.css.map */
+@page{size:auto; margin:5mm; }/*# sourceMappingURL=index.css.map */

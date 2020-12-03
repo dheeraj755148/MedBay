@@ -74,7 +74,16 @@ nav form button {
   vertical-align: middle;
   background-color: #232728;
 }
+nav .dropdown{
+  margin-right: 5px;
+  margin-left: 5px;
 
+}
+
+nav .clear-cart{
+  margin-right: 5px;
+  margin-left: 5px;
+}
 nav form button img {
   vertical-align: middle;
 }
@@ -351,7 +360,7 @@ nav .dropdown-item input {
 .col-md-8 .card .card-text {
   font-family: "Lato", sans-serif;
   font-weight: 300;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 9.6px;
 }
 
@@ -927,4 +936,14 @@ a.viewButton:hover{
   right: 0;
   margin: auto;
 }
+
+@media print {
+  .body {
+    -webkit-print-color-adjust: exact;
+    background: #222;
+    color: #eee;
+  }
+}
+
+@page{size:auto; margin:5mm; }
 /*# sourceMappingURL=darkIndex.css.map */
