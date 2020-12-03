@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link id="theme" href="./Style/index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>View all</title>
+</head>
+
+<body>
+    <div id="loader" class="center"></div> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html" title="MedBay"><img src="./Images/medicine.svg" alt="home"><br>
+            <p>MedBay</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><img src="./Images/helm.svg" alt=""></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav-item">
+                    <div class="justify-content-md-center">
+                        <form class="form-inline my-2 my-lg-0 ml-auto">
+                            <label class="location"><img id="anchor" src="./Images/anchor.svg" alt="Location"><p>Delivery at Mariana Trench</p></label >
+                        <input class="form-control mr-sm-2" id = "filter" type="text" placeholder="Search the treasures" aria-label="Search" >
+                        <button class="btn btn-info my-2 my-sm-0" id="searchbutton" type="submit" title="Search"><img src="./Images/search.svg" alt="search"></button>
+                    </form>
+                </div>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <p>Actions</p> 
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Language Change</a>
+              </div>
+            </li>
+          </ul>   
+
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#cart" title="Cart"><img src="./Images/Cart.svg" alt="Cart"> (<span class="total-count"></span>)</button><button class="clear-cart btn btn-outline-danger"><img src="./images/oil-spill.svg" alt="clear-cart" title="Clear-Cart"></button></div>
+        </div>
+
+        </div>
+    </nav>
+
+
+
+    <section id="products">
+        <div class="container-fluid my-3 py-3 text-center">
+            <div class="row mb-5">
+                <div class="col">
+                    <p class="mainheading">PRODUCT LIST</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="Himalaya">
+                        <div class="card body h-100">
+                            <img src="./images/him-diabecon.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Himalaya Diabecon</h1>
+                            <span id="medmanu">Manufacturer: Himalaya</span>
+                            <h6> Rs.140/-</h6>
+                            <a href="#" data-name="Himalaya Diabecon" data-price="140"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="Sugarfree">
+                        <div class="card body h-100">
+                            <img src="./images/sugarfree.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Sugar Free Gold Powder 100 gm</h1>
+                            <span id="medmanu">Manufacturer: Cadila Healthcare Ltd (Zydus)</span>
+                            <h6> Rs.135/-</h6>
+                            <a href="#" data-name="Sugar Free Gold Powder 100 gm" data-price="135"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="herbolax">
+                        <div class="card body h-100">
+                            <img src="./images/herbolax.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Himalaya Herbolax Capsule 10s</h1>
+                            <span id="medmanu">Manufacturer: Himalaya</span>
+                            <h6> Rs.40/-</h6>
+                            <a href="#" data-name="Himalaya Herbolax Capsule 10s" data-price="40"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="dibonil">
+                        <div class="card body h-100">
+                            <img src="./images/dibonil.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">SBL Dibonil Liquid 30 ml</h1>
+                            <span id="medmanu">Manufacturer: Sbl Pvt Ltd</span>
+                            <h6> Rs.135/-</h6>
+                            <a href="#" data-name="SBL Dibonil Liquid 30 ml" data-price="135"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="triactive">
+                        <div class="card body h-100">
+                            <img src="./images/triactiv.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Tri-Activ Instant Hand Sanitizer 500 ml</h1>
+                            <span id="medmanu">Manufacturer: Piramal Healthcare Ltd</span>
+                            <h6> Rs.250/-</h6>
+                            <a href="#" data-name="Tri-Activ Instant Hand Sanitizer 500 ml" data-price="250"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="dettol">
+                        <div class="card body h-100">
+                            <img src="./images/dettol.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Dettol Hand Sanitizer - Original 50 ml</h1>
+                            <span id="medmanu">Manufacturer: Reckitt Benckiser India Ltd</span>
+                            <h6> Rs.25/-</h6>
+                            <a href="#" data-name="Dettol Hand Sanitizer - Original 50 ml" data-price="25"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="coverall">
+                        <div class="card body h-100">
+                            <img src="./images/mile-coverall.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">1Mile Coverall with Shoe Cover (95 GSM)</h1>
+                            <span id="medmanu">Manufacturer: 1 Mile Healthcare</span>
+                            <h6> Rs.199/-</h6>
+                            <a href="#" data-name="1Mile Coverall with Shoe Cover (95 GSM)" data-price="199"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="infrared">
+                        <div class="card body h-100">
+                            <img src="./images/infrared.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Canyearn Medical Infrared Thermometer</h1>
+                            <span id="medmanu">Manufacturer: Canyearn</span>
+                            <h6> Rs.4205/-</h6>
+                            <a href="#" data-name="Canyearn Medical Infrared Thermometer" data-price="4205"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="immunityinlife">
+                        <div class="card body h-100">
+                            <img src="./images/inlife.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">INLIFE Immunity Plus</h1>
+                            <span id="medmanu">Manufacturer: Inlife Pharma Pvt Ltd</span>
+                            <h6> Rs.345/-</h6>
+                            <a href="#" data-name="INLIFE Immunity Plus" data-price="345"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="aadar">
+                        <div class="card body h-100">
+                            <img src="./images/aadar.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">AADAR Immunity Pro</h1>
+                            <span id="medmanu">Manufacturer: Aadar</span>
+                            <h6> Rs.274/-</h6>
+                            <a href="#" data-name="AADAR Immunity Pro" data-price="274"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="zenith">
+                        <div class="card body h-100">
+                            <img src="./images/zenith.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Zenith Immunity Plus</h1>
+                            <span id="medmanu">Manufacturer: Zenith Nutricorp</span>
+                            <h6> Rs.569/-</h6>
+                            <a href="#" data-name="Zenith Immunity Plus" data-price="569"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="keepharma">
+                        <div class="card body h-100">
+                            <img src="./images/keepharma.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">KEE Pharma Immunity</h1>
+                            <span id="medmanu">Manufacturer: KEE Pharma Ltd</span>
+                            <h6> Rs.834/-</h6>
+                            <a href="#" data-name="KEE Pharma Immunity" data-price="834"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="lama">
+                        <div class="card body h-100">
+                            <img src="./images/lama.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Lama Immunity Kit</h1>
+                            <span id="medmanu">Manufacturer: Lama Pharmaceuticals</span>
+                            <h6> Rs.140/-</h6>
+                            <a href="#" data-name="Lama Immunity Kit" data-price="140"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="organic">
+                        <div class="card body h-100">
+                            <img src="./images/organic.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Organic India Immunity Veg Capsules 60's</h1>
+                            <span id="medmanu">Manufacturer: Organic Indio Pvt Ltd</span>
+                            <h6> Rs.135/-</h6>
+                            <a href="#" data-name="Organic India Immunity Veg Capsules 60's" data-price="135"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="vitawin">
+                        <div class="card body h-100">
+                            <img src="./images/vitawin.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Vitawin Vitamin C Capsules 60's</h1>
+                            <span id="medmanu">Manufacturer: Green Cross Health Innovation</span>
+                            <h6> Rs.40/-</h6>
+                            <a href="#" data-name="Vitawin Vitamin C Capsules 60's" data-price="40"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="nutractive">
+                        <div class="card body h-100">
+                            <img src="./images/nutractive.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">NutrActive Immune Drops 30 ml</h1>
+                            <span id="medmanu">Manufacturer: Almighty Agro Industry</span>
+                            <h6> Rs.135/-</h6>
+                            <a href="#" data-name="NutrActive Immune Drops 30 ml" data-price="135"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="shake">
+                        <div class="card body h-100">
+                            <img src="./images/5litres.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Let's Shake Handz 5L Hand Sanitizer</h1>
+                            <span id="medmanu">Manufacturer: S.M Innophorm Pvt. Ltd.</span>
+                            <h6> Rs.2500/-</h6>
+                            <a href="#" data-name="Let's Shake Handz 5L Hand Sanitizer" data-price="2500"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="face shield">
+                        <div class="card body h-100">
+                            <img src="./images/facemask.png" alt="" class="img fluid w-50 mb-5 mx-auto">
+                            <h1 id="medname">1Mile Protective Face Shield</h1>
+                            <span id="medmanu">Manufacturer: 1 Mile Healthcare</span>
+                            <h6> Rs.549/-</h6>
+                            <a href="#" data-name="1Mile Protective Face Shield" data-price="549"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="face mask">
+                        <div class="card body h-100">
+                            <img src="./images/n95.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Anti-Bacterial Face Mask KN95</h1>
+                            <span id="medmanu">Manufacturer: Huizhou Green Communication Equipment</span>
+                            <h6> Rs.734/-</h6>
+                            <a href="#" data-name="Anti-Bacterial Face Mask KN95" data-price="734"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12  mb-3">
+                    <div class="card h-100" data-string="velvet">
+                        <div class="card body h-100">
+                            <img src="./images/velvet.png" alt="" class="img fluid w-50 mb-3 mx-auto">
+                            <h1 id="medname">Natures Velvet Vitamin C</h1>
+                            <span id="medmanu">Manufacturer: Natures Velvet Lifecar</span>
+                            <h6> Rs.400/-</h6>
+                            <a href="#" data-name="Natures Velvet Vitamin C" data-price="400"
+                                class="cart-hidden btn btn-primary">
+                                <img src="./images/Cart.svg" alt="cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" id="modalb">
+                    <div id="divCheckbox" style="display: none;">
+                        <div class="row invoice row-printable">
+                            <div class="col-md-10">
+                                <div class="panel panel-default plain" id="dash_0">
+                                    <div class="panel-body p30">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="invoice-logo"><img width="100" src="./Images/medicine.svg"
+                                                        alt="Invoice logo">
+                                                    <p style="display:block">MEDBAY</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="invoice-from">
+                                                    <ul class="list-unstyled text-right"
+                                                        style="position: absolute; right : 10px">
+                                                        <li>MedBay, Shop 10, Near Pacific Rim, Earth</li>
+                                                        <li>Contact No: 0000-111-000</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="invoice-details mt25">
+                                                    <div class="well">
+                                                        <ul class="list-unstyled mb0">
+                                                            <li><strong>Invoice : #</strong>
+                                                                <div id='getit' style="display: inline"></div>
+                                                            </li>
+                                                            <li><strong>Invoice Date : </strong>
+                                                                <div id='dates' style="display: inline"></div>
+                                                            </li>
+                                                            <li><strong>Due Date : </strong>
+                                                                <div id='later' style="display: inline"></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="invoice-to mt25">
+                                                    <ul class="list-unstyled">
+                                                        <li><strong>Invoiced To</strong></li>
+                                                        <li>Patient name : <span id="patient"></span></li>
+                                                        <li>Doctor name : <span id="doctor"></span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>
+                        <h5>Total price: ₹<span class="total-cart"></span></h5>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="myFunction()" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/load.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"
+        integrity="sha384-+54fLHoW8AHu3nHtUxs9fW2XKOZ2ZwKHB5olRtKSDTKJIb1Na1EceFZMS8E72mzW"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./JS/cart.js"></script>
+    <script src="./JS/search.js"></script>
+    <script src="./JS/invoice.js"></script>
+    <script src="./JS/randomstuff.js"></script>
+    <script src="./JS/dark.js"></script>
+
+    <div class="hidden" style="display: none;">
+        <div id="newSection"></div>
+        <div id="newSection1"></div>
+        <div id="newSection2"></div>
+        <img id="corona" src="" alt="">
+        <img id="immune" src="" alt="">
+        <img id="pirate" src="" alt="">
+    </div>
+
+
+</body>
+
+<footer class="page-footer font-small blue pt-4">
+
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <img src="./Images/medicine.svg" alt="logo">
+          <p id="logotext" >MedBay</p>
+        </div>
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <div class="col-md-3 mb-md-0 mb-3">
+          <p class="row-headings" >Contact Us</p>
+          <p class="content">MedBay, Shop 10, Near Pacific Rim, Earth</p>
+          <p class="content"><img src="./Images/1667685 1.svg" alt="pummp">0000-111-000</p>
+        </div>
+  
+        <div class="col-md-3 mb-md-0 mb-3">
+          <p class="row-headings" >Mail Us</p>
+          <input type="text" placeholder="Enter Mail Address">
+          <button id="submit"><img src="./Images/Vector 5.svg" alt=""></button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: MEDBAY
+      <img src="./Images/sea-waves 2.svg" alt="">
+    </div>
+  
+  </footer>
+
+</html>
