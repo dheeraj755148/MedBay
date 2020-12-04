@@ -18,14 +18,17 @@ function myFunction() {
     
     switch (langer) {
         case 1:
+            alert("Invoice print is only allowed on Windows(Chrome, Edge, FireFox) and Safari. Not supported on Android.")
             var pat_person = prompt("कृपया रोगी का पूरा नाम दर्ज करें:", "Jane Doe ");
             var doc_person = prompt("कृपया डॉक्टर का पूरा नाम दर्ज करें::", "Jany Doe ");
             break;
         case 2:
+            alert("Invoice print is only allowed on Windows(Chrome, Edge, FireFox) and Safari. Not supported on Android.")
             var pat_person = prompt("कृपया रुग्णाचे पूर्ण नाव प्रविष्ट करा:", "Jane Doe ");
             var doc_person = prompt("कृपया डॉक्टरांचे पूर्ण नाव प्रविष्ट करा:", "Jany Doe ");
             break;
         default:
+            alert("Invoice print is only allowed on Windows(Chrome, Edge, FireFox) and Safari. Not supported on Android.")
             var pat_person = prompt("Please enter Patient's full name:", "Jane Doe ");
             var doc_person = prompt("Please enter Doctor's full name:", "Jany Doe ");
         break;
