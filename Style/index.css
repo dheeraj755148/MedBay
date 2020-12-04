@@ -884,11 +884,9 @@ a.viewButton{
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
   text-align:center;
   transition: all 0.2s;
-  max-width: fit-content;
 }
-a .viewButton:hover{
-  color: black;
-  background-color: white;
+a.viewButton:hover{
+  border-color: rgba(255,255,255,1);
 }
 @media all and (max-width:30em){
   a.viewButton{

@@ -278,6 +278,7 @@ nav .dropdown-item input {
   line-height: 21.29px;
   letter-spacing: 7%;
   text-decoration: underline;
+  position: absolute;
 }
 
 .col-lg-9 .headingitems .view-all p a,
@@ -943,6 +944,13 @@ a.viewButton:hover{
       line-height: 25px;
       margin-bottom: 12px;
   }}
+  @media (max-width: 700px){
+    .col-lg-9 .headingitems .view-all,
+  .col-md-8 .headingitems .view-all{
+      position: relative;
+  }
+  
+  }
   
   @media (max-width: 768px){
     .imageFormater .message2 p {
