@@ -52,7 +52,7 @@ function myFunction() {
         document.body.innerHTML = originalContents;
         setTimeout(function() {
             location.reload();
-        }, 1);
+        }, 5000);
         }
         div.style.display = 'none';
 
